@@ -2,3 +2,5 @@ fastapi
 uvicorn
 instagrapi
 python-multipart
+Pillow>=8.1.1
+Jinja2
