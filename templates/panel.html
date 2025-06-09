@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstaBot Login</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f2f2f2;
+      padding: 30px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background-color: #6200EE;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>ورود به ربات اینستاگرام</h2>
+    <form action="/login/" method="POST">
+      <input type="text" name="username" placeholder="نام کاربری" required>
+      <input type="password" name="password" placeholder="رمز عبور" required>
+      <input type="text" name="code" placeholder="کد ۲مرحله‌ای (درصورت نیاز)">
+      <button type="submit">ورود و ذخیره سشن</button>
+    </form>
+
+    <hr>
+
+    <form action="/like_comment/" method="POST">
+      <input type="text" name="username" placeholder="نام کاربری برای لایک/کامنت" required>
+      <button type="submit">شروع لایک و کامنت</button>
+    </form>
+  </div>
+</body>
+</html>
